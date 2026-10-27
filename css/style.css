@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    PORTFÓLIO PROFISSIONAL — GUSTAVO ALMEIDA
    Estudante de Técnico em Informática | SENAC São Paulo
    Metodologia: Mobile-First estrita com media queries min-width
@@ -9,27 +9,36 @@
    1. DESIGN TOKENS & VARIÁVEIS CSS
    -------------------------------------------------------------------------- */
 :root {
-  /* Paleta Inspirada na Identidade Visual de Referência */
-  --cor-vermelho: #e2261a;
-  --cor-vermelho-hover: #c41e13;
-  --cor-vermelho-escuro: #8f1208;
-  --cor-preto: #110e0d;
-  --cor-preto-card: #1b1615;
-  --cor-preto-suave: #221c1a;
+  /* Paleta Azul & Preto — Azul Primário (#007acc) */
+  --cor-azul: #007acc;
+  --cor-azul-hover: #005fa3;
+  --cor-azul-escuro: #004578;
+  --cor-azul-brilhante: #1f9aff;
+
+  /* Aliases para compatibilidade total */
+  --cor-vermelho: var(--cor-azul);
+  --cor-vermelho-hover: var(--cor-azul-hover);
+  --cor-vermelho-escuro: var(--cor-azul-escuro);
+
+  --cor-preto: #0b0f17;
+  --cor-preto-card: #121824;
+  --cor-preto-suave: #182232;
   --cor-branco: #ffffff;
-  --cor-creme: #f7f2e9;
-  --cor-creme-card: #ece6dc;
+  --cor-creme: #f4f7fb;
+  --cor-creme-card: #e5edf5;
   --cor-ouro: #ffcb2b;
 
   /* Cores de Texto e Contraste Acessível (WCAG AA > 4.5:1) */
+  --texto-no-azul: #ffffff;
   --texto-no-vermelho: #ffffff;
-  --texto-no-preto: #f7f2e9;
-  --texto-no-preto-mutado: #c4beb4;
-  --texto-no-claro: #141110;
-  --texto-no-claro-mutado: #524c47;
-  --borda-no-preto: rgba(247, 242, 233, 0.15);
-  --borda-no-vermelho: rgba(247, 242, 233, 0.35);
-  --borda-no-claro: rgba(17, 14, 13, 0.12);
+  --texto-no-preto: #f4f7fb;
+  --texto-no-preto-mutado: #94a3b8;
+  --texto-no-claro: #0b0f17;
+  --texto-no-claro-mutado: #475569;
+  --borda-no-preto: rgba(240, 246, 252, 0.12);
+  --borda-no-azul: rgba(0, 122, 204, 0.35);
+  --borda-no-vermelho: rgba(0, 122, 204, 0.35);
+  --borda-no-claro: rgba(11, 15, 23, 0.12);
 
   /* Tipografia */
   --fonte-display: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
@@ -71,8 +80,8 @@ html {
 }
 
 body {
-  background-color: var(--cor-vermelho);
-  color: var(--texto-no-vermelho);
+  background-color: var(--cor-azul);
+  color: var(--texto-no-azul);
   font-family: var(--fonte-corpo);
   font-size: 0.9375rem; /* 15px */
   line-height: 1.6;
@@ -203,7 +212,7 @@ ol {
   left: 0;
   right: 0;
   height: var(--altura-header);
-  background-color: rgba(226, 38, 26, 0.95);
+  background-color: rgba(0, 122, 204, 0.95);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 900;
@@ -215,7 +224,7 @@ ol {
 }
 
 .cabecalho.rolado {
-  background-color: rgba(17, 14, 13, 0.94);
+  background-color: rgba(11, 15, 23, 0.94);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
@@ -239,7 +248,7 @@ ol {
 }
 
 .logo-ponto {
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
 }
 
 .logo-link:hover .logo-badge {
@@ -357,7 +366,7 @@ ol {
 
 .link-mobile:hover,
 .link-mobile.ativo {
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
   transform: translateX(6px);
 }
 
@@ -388,7 +397,7 @@ ol {
 
 .icone-social:hover {
   background-color: var(--cor-branco);
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
   border-color: var(--cor-branco);
 }
 
@@ -403,7 +412,7 @@ ol {
   flex-direction: column;
   justify-content: center;
   gap: 2.5rem;
-  background-color: var(--cor-vermelho);
+  background-color: var(--cor-azul);
   clip-path: polygon(0 0, 100% 0, 100% 97%, 65% 100%, 30% 98%, 0 100%);
 }
 
@@ -508,13 +517,13 @@ ol {
 }
 
 .btn-secundario {
-  background-color: var(--cor-vermelho);
+  background-color: var(--cor-azul);
   color: var(--cor-branco);
-  border: 1.5px solid var(--cor-vermelho);
+  border: 1.5px solid var(--cor-azul);
 }
 
 .btn-secundario:hover {
-  background-color: var(--cor-vermelho-hover);
+  background-color: var(--cor-azul-hover);
   transform: translateY(-2px);
 }
 
@@ -526,7 +535,7 @@ ol {
 
 .btn-contorno-claro:hover {
   background-color: var(--cor-branco);
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
   border-color: var(--cor-branco);
   transform: translateY(-3px);
 }
@@ -575,7 +584,7 @@ ol {
 }
 
 .emblema-letra-a {
-  fill: var(--cor-vermelho);
+  fill: var(--cor-azul);
   font-family: var(--fonte-display);
   font-size: 115px;
 }
@@ -609,8 +618,8 @@ ol {
   color: var(--cor-branco);
   overflow: hidden;
   padding: 1.15rem 0;
-  border-top: 2px solid var(--cor-vermelho-escuro);
-  border-bottom: 2px solid var(--cor-vermelho-escuro);
+  border-top: 2px solid var(--cor-azul-escuro);
+  border-bottom: 2px solid var(--cor-azul-escuro);
   transform: rotate(-0.5deg) scale(1.02);
   position: relative;
   z-index: 20;
@@ -685,7 +694,7 @@ ol {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
   display: inline-block;
   margin-bottom: 0.5rem;
 }
@@ -745,7 +754,7 @@ ol {
   aspect-ratio: 16 / 9;
   border-radius: var(--raio-md);
   overflow: hidden;
-  background: linear-gradient(135deg, var(--cor-vermelho), var(--cor-vermelho-escuro));
+  background: linear-gradient(135deg, var(--cor-azul), var(--cor-azul-escuro));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -774,7 +783,7 @@ ol {
 
 .card-badge-categoria {
   align-self: flex-start;
-  background-color: var(--cor-vermelho);
+  background-color: var(--cor-azul);
   color: var(--cor-branco);
   font-size: 0.6875rem;
   font-weight: 800;
@@ -826,7 +835,7 @@ ol {
 }
 
 .btn-card-primary {
-  background-color: var(--cor-vermelho);
+  background-color: var(--cor-azul);
   color: var(--cor-branco);
   padding: 0.65rem 1.25rem;
   border-radius: var(--raio-full);
@@ -840,7 +849,7 @@ ol {
 }
 
 .btn-card-primary:hover {
-  background-color: var(--cor-vermelho-hover);
+  background-color: var(--cor-azul-hover);
   transform: translateY(-2px);
 }
 
@@ -883,8 +892,8 @@ ol {
    9. SEÇÃO HABILIDADES & STACK (MOBILE-FIRST)
    -------------------------------------------------------------------------- */
 .secao-stack {
-  background-color: var(--cor-vermelho);
-  color: var(--texto-no-vermelho);
+  background-color: var(--cor-azul);
+  color: var(--texto-no-azul);
   padding: 5rem 1.25rem;
 }
 
@@ -923,7 +932,7 @@ ol {
 
 .aba-stack-btn[aria-selected="true"] {
   background-color: var(--cor-branco);
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
   border-color: var(--cor-branco);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -1021,9 +1030,9 @@ ol {
 }
 
 .badge-nivel.familiaridade {
-  background-color: rgba(226, 38, 26, 0.25);
-  color: #ff8c85;
-  border: 1px solid rgba(226, 38, 26, 0.6);
+  background-color: rgba(0, 122, 204, 0.2);
+  color: #60b6ff;
+  border: 1px solid rgba(0, 122, 204, 0.5);
 }
 
 .badge-nivel.basico {
@@ -1048,7 +1057,7 @@ ol {
 }
 
 .secao-sobre .tag-secao {
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
 }
 
 .sobre-grid {
@@ -1071,7 +1080,7 @@ ol {
 
 .sobre-destaque-box {
   background-color: var(--cor-branco);
-  border-left: 4px solid var(--cor-vermelho);
+  border-left: 4px solid var(--cor-azul);
   padding: 1.25rem 1.5rem;
   border-radius: 0 var(--raio-md) var(--raio-md) 0;
   margin: 1.75rem 0 2rem;
@@ -1103,7 +1112,7 @@ ol {
   right: -50px;
   width: 140px;
   height: 140px;
-  background: radial-gradient(circle, rgba(226, 38, 26, 0.35) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 122, 204, 0.35) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1118,7 +1127,7 @@ ol {
   width: 72px;
   height: 72px;
   border-radius: var(--raio-md);
-  background: linear-gradient(135deg, var(--cor-vermelho), var(--cor-vermelho-escuro));
+  background: linear-gradient(135deg, var(--cor-azul), var(--cor-azul-escuro));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1201,7 +1210,7 @@ ol {
 .card-formacao {
   background-color: var(--cor-preto-card);
   border: 1px solid var(--borda-no-preto);
-  border-left: 4px solid var(--cor-vermelho);
+  border-left: 4px solid var(--cor-azul);
   border-radius: var(--raio-md);
   padding: 1.75rem 1.5rem;
   transition: transform var(--transicao-rapida);
@@ -1242,7 +1251,7 @@ ol {
 .formacao-instituicao {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
 }
 
 .formacao-descricao {
@@ -1280,7 +1289,7 @@ ol {
    12. SEÇÃO CONTATO (MOBILE-FIRST)
    -------------------------------------------------------------------------- */
 .secao-contato {
-  background-color: var(--cor-vermelho);
+  background-color: var(--cor-azul);
   color: var(--cor-branco);
   padding: 5rem 1.25rem 4rem;
   text-align: center;
@@ -1337,8 +1346,8 @@ ol {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: rgba(226, 38, 26, 0.2);
-  border: 1.5px solid var(--cor-vermelho);
+  background-color: rgba(0, 122, 204, 0.2);
+  border: 1.5px solid var(--cor-azul);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1483,7 +1492,7 @@ ol {
 }
 
 .rodape-nav-link:hover {
-  color: var(--cor-vermelho);
+  color: var(--cor-azul);
 }
 
 .rodape-social-lista {
@@ -1534,8 +1543,8 @@ ol {
 }
 
 .btn-voltar-topo:hover {
-  background-color: var(--cor-vermelho);
-  border-color: var(--cor-vermelho);
+  background-color: var(--cor-azul);
+  border-color: var(--cor-azul);
   transform: translateY(-3px);
 }
 
@@ -1697,7 +1706,7 @@ ol {
 
   .icone-social-desktop:hover {
     background-color: var(--cor-branco);
-    color: var(--cor-vermelho);
+    color: var(--cor-azul);
     border-color: var(--cor-branco);
     transform: translateY(-2px);
   }

@@ -224,14 +224,19 @@ function initAbasStack() {
 
 /**
  * --------------------------------------------------------------------------
- * 5. CURSOR CUSTOMIZADO COM SEGUIÇÃO SUAVE (DESKTOP FINE-POINTER)
+ * 5. CURSOR CUSTOMIZADO (DESKTOPS COM FINE-POINTER) — SEM CÍRCULO ENVOLTA
  * --------------------------------------------------------------------------
  */
 function initCursorCustomizado() {
   const cursorDot = document.querySelector('.cursor-dot');
   const cursorRing = document.querySelector('.cursor-ring');
 
-  if (!cursorDot || !cursorRing) return;
+  // Garante que o círculo em volta do cursor não seja exibido
+  if (cursorRing) {
+    cursorRing.remove();
+  }
+
+  if (!cursorDot) return;
 
   // Verifica se o dispositivo tem suporte a mouse de precisão e animações ativas
   const temMouse = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -239,39 +244,12 @@ function initCursorCustomizado() {
 
   if (!temMouse || prefereReducaoMovimento) {
     cursorDot.style.display = 'none';
-    cursorRing.style.display = 'none';
     return;
   }
 
-  let mouseX = -100;
-  let mouseY = -100;
-  let ringX = -100;
-  let ringY = -100;
-
   window.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-
-    cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+    cursorDot.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0) translate(-50%, -50%)`;
   }, { passive: true });
-
-  function animarRing() {
-    // Interpolação linear suave (lerp)
-    ringX += (mouseX - ringX) * 0.18;
-    ringY += (mouseY - ringY) * 0.18;
-
-    cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
-    requestAnimationFrame(animarRing);
-  }
-
-  requestAnimationFrame(animarRing);
-
-  // Efeito de expansão nos elementos interativos
-  const alvosInterativos = document.querySelectorAll('a, button, input, textarea, [role="button"], [role="tab"]');
-  alvosInterativos.forEach(alvo => {
-    alvo.addEventListener('mouseenter', () => cursorRing.classList.add('ativo'));
-    alvo.addEventListener('mouseleave', () => cursorRing.classList.remove('ativo'));
-  });
 }
 
 /**

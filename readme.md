@@ -15,9 +15,9 @@ Portfólio pessoal e currículo web moderno, responsivo e de alta performance de
 O projeto foi concebido a partir de referências visuais contemporâneas (inspirado na proposta estética do portfólio de referência com contraste marcante, tipografia de grande impacto e microinterações fluidas), adaptando toda a linguagem para a identidade pessoal de Gustavo.
 
 ### 🎨 Paleta de Cores & Design Tokens
-- **Vermelho Vibrante (`#e2261a`):** Cor de destaque e energia visual (Hero, divisores e botões de ação).
-- **Preto Obsidiana (`#110e0d` e `#1b1615`):** Fundo de alta densidade e contraste para os cards e seções técnicas.
-- **Creme Quente (`#f7f2e9`):** Contraste suave para as seções textuais (Sobre Mim) e corpo dos cartões.
+- **Azul Primário (`#007acc`):** Cor de destaque, tecnologia e energia visual (Hero, divisores e botões de ação).
+- **Preto Obsidiana (`#0b0f17` e `#121824`):** Fundo de alta densidade e contraste para os cards e seções técnicas.
+- **Off-White Suave (`#f4f7fb`):** Contraste limpo e moderno para seções textuais (Sobre Mim) e corpo dos cartões.
 - **Dourado Spark (`#ffcb2b`):** Acentos visuais em estrelas separadoras, ícones e destaques.
 
 ### 🔤 Tipografia
@@ -40,7 +40,7 @@ O projeto foi construído **exclusivamente com tecnologias nativas**, sem o uso 
   - Implementação de `IntersectionObserver` para rastreamento de seção ativa no menu.
   - Menu drawer mobile com foco acessível e fechamento via tecla `ESC`.
   - Abas interativas de stack compatíveis com padrões WAI-ARIA.
-  - Cursor personalizado suave (ativado apenas em dispositivos com ponteiro fino).
+  - Cursor personalizado direto e preciso, sem círculos ou anéis de atraso em volta do ponteiro.
   - Atualização automática do ano de copyright (`new Date().getFullYear()`).
 
 ---
