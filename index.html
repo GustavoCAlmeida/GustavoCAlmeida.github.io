@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+  <!-- Metadados Fundamentais & Validação W3C -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Gustavo Almeida | Portfólio — Estudante de Técnico em Informática SENAC</title>
+
+  <!-- SEO Técnico & Indexação -->
+  <meta name="description"
+    content="Portfólio profissional de Gustavo Almeida, estudante de Técnico em Informática pelo SENAC São Paulo. Projetos em HTML, CSS, JavaScript, Spring Boot e Python.">
+  <meta name="author" content="Gustavo Cruz de Almeida">
+  <meta name="creator" content="Gustavo Cruz de Almeida">
+  <meta name="publisher" content="Gustavo Cruz de Almeida">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- URL Canônica (Ajustar com o domínio final de publicação) -->
+  <link rel="canonical" href="https://gustavocalmeida.github.io/">
+
+  <!-- Otimização de Performance: Preconnect de Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Folha de Estilos Mobile-First Pura -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Favicon e Dicas PWA -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <meta name="theme-color" content="#e2261a" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#110e0d" media="(prefers-color-scheme: dark)">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Gustavo Almeida | Portfólio — Estudante Técnico em Informática SENAC">
+  <meta property="og:description"
+    content="Conheça meus projetos, habilidades técnicas e trajetória no desenvolvimento de software.">
+  <meta property="og:url" content="https://gustavocalmeida.github.io/">
+  <meta property="og:site_name" content="Gustavo Almeida Portfólio">
+  <meta property="og:image" content="https://gustavocalmeida.github.io/favicon.svg">
+  <meta property="og:image:alt" content="Monograma visual de Gustavo Almeida">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gustavo Almeida | Portfólio Profissional">
+  <meta name="twitter:description"
+    content="Estudante de Técnico em Informática pelo SENAC São Paulo, explorando o desenvolvimento Front-end e Back-end.">
+  <meta name="twitter:image" content="https://gustavocalmeida.github.io/favicon.svg">
+
+  <!-- Dados Estruturados Schema.org (JSON-LD) para SEO e IA Generativa -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gustavocalmeida.github.io/#website",
+        "url": "https://gustavocalmeida.github.io/",
+        "name": "Gustavo Almeida | Portfólio Profissional",
+        "description": "Portfólio pessoal e projetos de programação de Gustavo Almeida.",
+        "publisher": {
+          "@id": "https://gustavocalmeida.github.io/#person"
+        },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://gustavocalmeida.github.io/#webpage",
+        "url": "https://gustavocalmeida.github.io/",
+        "name": "Gustavo Almeida - Estudante Técnico em Informática",
+        "isPartOf": {
+          "@id": "https://gustavocalmeida.github.io/#website"
+        },
+        "about": {
+          "@id": "https://gustavocalmeida.github.io/#person"
+        },
+        "mainEntity": {
+          "@id": "https://gustavocalmeida.github.io/#person"
+        },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://gustavocalmeida.github.io/#person",
+        "name": "Gustavo Cruz de Almeida",
+        "url": "https://gustavocalmeida.github.io/",
+        "jobTitle": "Estudante de Técnico em Informática",
+        "affiliation": {
+          "@type": "EducationalOrganization",
+          "name": "SENAC São Paulo"
+        },
+        "sameAs": [
+          "https://github.com/GustavoCAlmeida",
+          "https://www.linkedin.com/in/gustavo-cruz-de-almeida-a4a92a388"
+        ],
+        "knowsAbout": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Tailwind CSS",
+          "Consumo de APIs REST",
+          "Java",
+          "Spring Boot",
+          "Python",
+          "Postman"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Script Não-Bloqueante com Defer -->
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Acessibilidade: Link Direto para o Conteúdo Principal -->
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- Cursor Customizado Decorativo (Ativado Apenas em Desktops com Ponteiro Fino) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ======================================================================
+       CABEÇALHO & NAVEGAÇÃO RESPONSIVA
+       ====================================================================== -->
+  <header id="cabecalhoPrincipal" class="cabecalho">
+    <div class="logo">
+      <a href="#inicio" class="logo-link" aria-label="Gustavo Almeida - Ir para o início">
+        <span class="logo-badge">GA<span class="logo-ponto">.</span></span>
+      </a>
+    </div>
+
+    <!-- Navegação Desktop -->
+    <nav class="navegacao-desktop" aria-label="Navegação Principal Desktop">
+      <a href="#inicio" class="nav-item-link ativo">Início</a>
+      <a href="#projetos" class="nav-item-link">Projetos</a>
+      <a href="#stack" class="nav-item-link">Stack</a>
+      <a href="#sobre" class="nav-item-link">Sobre</a>
+      <a href="#formacao" class="nav-item-link">Formação</a>
+      <a href="#contato" class="nav-item-link">Contato</a>
+    </nav>
+
+    <!-- Redes Sociais Desktop -->
+    <div class="redes-desktop" aria-label="Redes sociais profissionais">
+      <a href="https://github.com/GustavoCAlmeida" target="_blank" rel="noopener noreferrer" class="icone-social-desktop"
+        aria-label="Perfil do GitHub de Gustavo Almeida (abre em nova guia)">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.06-.01-1.93-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.35 1.1 2.92.84.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.13-4.55-5.03 0-1.11.38-2.02 1.02-2.73-.1-.26-.44-1.31.1-2.72 0 0 .84-.27 2.75 1.04a9.4 9.4 0 015 0c1.9-1.31 2.75-1.04 2.75-1.04.54 1.41.2 2.46.1 2.72.64.71 1.02 1.62 1.02 2.73 0 3.91-2.34 4.77-4.57 5.02.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/gustavo-cruz-de-almeida-a4a92a388" target="_blank" rel="noopener noreferrer"
+        class="icone-social-desktop" aria-label="Perfil do LinkedIn de Gustavo Almeida (abre em nova guia)">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Botão Hamburger Mobile -->
+    <button id="botaoHamburger" class="botao-hamburger" aria-expanded="false" aria-controls="menuMobileDrawer"
+      aria-label="Abrir menu de navegação">
+      <span class="linha-hamburger" aria-hidden="true"></span>
+      <span class="linha-hamburger" aria-hidden="true"></span>
+      <span class="linha-hamburger" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <!-- Overlay e Gaveta de Navegação Mobile -->
+  <div id="overlayMenu" class="overlay-menu" aria-hidden="true"></div>
+  <aside id="menuMobileDrawer" class="menu-mobile-drawer" aria-hidden="true" aria-label="Menu de Navegação Mobile">
+    <nav class="navegacao-mobile" aria-label="Links do Menu Mobile">
+      <ul class="lista-mobile">
+        <li><a href="#inicio" class="link-mobile">Início</a></li>
+        <li><a href="#projetos" class="link-mobile">Projetos</a></li>
+        <li><a href="#stack" class="link-mobile">Stack</a></li>
+        <li><a href="#sobre" class="link-mobile">Sobre</a></li>
+        <li><a href="#formacao" class="link-mobile">Formação</a></li>
+        <li><a href="#contato" class="link-mobile">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="redes-mobile" aria-label="Links sociais no menu mobile">
+      <a href="https://github.com/GustavoCAlmeida" target="_blank" rel="noopener noreferrer" class="icone-social"
+        aria-label="GitHub de Gustavo Almeida (abre em nova guia)">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.06-.01-1.93-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.35 1.1 2.92.84.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.13-4.55-5.03 0-1.11.38-2.02 1.02-2.73-.1-.26-.44-1.31.1-2.72 0 0 .84-.27 2.75 1.04a9.4 9.4 0 015 0c1.9-1.31 2.75-1.04 2.75-1.04.54 1.41.2 2.46.1 2.72.64.71 1.02 1.62 1.02 2.73 0 3.91-2.34 4.77-4.57 5.02.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/gustavo-cruz-de-almeida-a4a92a388" target="_blank" rel="noopener noreferrer"
+        class="icone-social" aria-label="LinkedIn de Gustavo Almeida (abre em nova guia)">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z" />
+        </svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       CONTEÚDO PRINCIPAL
+       ====================================================================== -->
+  <main id="conteudo-principal">
+
+    <!-- --------------------------------------------------------------------
+         SEÇÃO HERO
+         -------------------------------------------------------------------- -->
+    <section id="inicio" class="secao-hero" aria-labelledby="tituloHero">
+      <div class="hero-conteudo">
+        <div class="hero-badge-tag">
+          <span>Estudante de Informática @ SENAC</span>
+        </div>
+
+        <h1 id="tituloHero" class="hero-titulo">
+          <span class="hero-linha">GUSTAVO</span>
+          <span class="hero-linha">ALMEIDA</span>
+        </h1>
+
+        <p class="hero-subtitulo">
+          Desenvolvimento de Software, Interfaces Web e Integração de APIs.
+        </p>
+
+        <p class="hero-descricao">
+          Estudante de Técnico em Informática pelo SENAC São Paulo, dedicado ao aprendizado contínuo, boas práticas de
+          programação e construção de soluções práticas com foco em qualidade, acessibilidade e usabilidade.
+        </p>
+
+        <div class="hero-acoes">
+          <a href="#projetos" class="btn-principal">
+            <span>Visualizar Projetos</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#contato" class="btn-contorno-claro">
+            <span>Entrar em Contato</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Emblema Gráfico SVG Dinâmico GA (Inspirado na Referência) -->
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="hero-svg-emblema">
+          <g class="anim-flutuar-1">
+            <rect class="emblema-quad-escuro" x="50" y="50" width="190" height="190" rx="20" />
+            <text class="emblema-letra-g" x="145" y="185" text-anchor="middle">G</text>
+          </g>
+          <g class="anim-flutuar-2">
+            <rect class="emblema-quad-claro" x="170" y="170" width="180" height="180" rx="20" />
+            <text class="emblema-letra-a" x="260" y="302" text-anchor="middle">A</text>
+          </g>
+          <circle cx="340" cy="75" r="24" class="emblema-spark" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         FAIXA STACK EM LOOP INFINITO (TICKER MARQUEE)
+         -------------------------------------------------------------------- -->
+    <aside class="faixa-stack" aria-label="Tecnologias em destaque">
+      <div class="faixa-stack-trilha">
+        <!-- Bloco 1 (Duplicado para loop CSS contínuo) -->
+        <div class="faixa-item-bloco">
+          <span class="faixa-stack-texto">HTML5 <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">CSS3 <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">JAVASCRIPT (ES6+) <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">TAILWIND CSS <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">JAVA <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">SPRING BOOT <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">PYTHON <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">CONSUMO DE APIS REST <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">POSTMAN <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">SENAC SP <span class="faixa-separador">✦</span></span>
+        </div>
+        <!-- Bloco 2 para rolagem sem falhas -->
+        <div class="faixa-item-bloco" aria-hidden="true">
+          <span class="faixa-stack-texto">HTML5 <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">CSS3 <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">JAVASCRIPT (ES6+) <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">TAILWIND CSS <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">JAVA <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">SPRING BOOT <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">PYTHON <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">CONSUMO DE APIS REST <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">POSTMAN <span class="faixa-separador">✦</span></span>
+          <span class="faixa-stack-texto">SENAC SP <span class="faixa-separador">✦</span></span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- --------------------------------------------------------------------
+         SEÇÃO PROJETOS
+         -------------------------------------------------------------------- -->
+    <section id="projetos" class="secao-projetos" aria-labelledby="tituloProjetos">
+      <div class="container-padrao">
+        <header class="cabecalho-secao">
+          <span class="tag-secao">Prática &amp; Desenvolvimento</span>
+          <h2 id="tituloProjetos" class="titulo-secao">MEUS PROJETOS</h2>
+          <p class="subtitulo-secao">
+            Projetos práticos e estudos desenvolvidos durante minha formação técnica e estudos individuais. Estrutura
+            organizada e preparada para documentação e demonstração de código.
+          </p>
+        </header>
+
+        <div class="projetos-grid">
+          <!-- Projeto 1: Consumo de APIs REST com JavaScript -->
+          <article class="card-projeto">
+            <div class="card-frame-visual">
+              <svg class="svg-preview-projeto" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+              </svg>
+              <span class="card-frame-rotulo">INTEGRAÇÃO API REST</span>
+            </div>
+
+            <span class="card-badge-categoria">Front-end &amp; Assíncrono</span>
+            <h3 class="card-titulo-projeto">Consumo &amp; Renderização de API REST</h3>
+
+            <p class="card-descricao-projeto">
+              Aplicação web focada no consumo de endpoints REST externos utilizando Fetch API nativa do JavaScript.
+              Manipulação dinâmica do DOM, tratamento de promessas (async/await), gerenciamento de estados de
+              carregamento e tratamento de erros de requisição.
+            </p>
+
+            <ul class="card-tech-tags" aria-label="Tecnologias utilizadas no projeto">
+              <li class="tech-pill">JavaScript ES6+</li>
+              <li class="tech-pill">HTML5 Semântico</li>
+              <li class="tech-pill">CSS3</li>
+              <li class="tech-pill">Fetch API / REST</li>
+            </ul>
+
+            <div class="card-acoes-projeto">
+              <a href="https://github.com/GustavoCAlmeida" target="_blank" rel="noopener noreferrer"
+                class="btn-card-primary">
+                <span>Ver no GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span class="btn-card-outline" style="opacity: 0.8; cursor: default;" title="Demonstração em fase de publicação">
+                <span>Demo em Breve</span>
+              </span>
+            </div>
+
+            <div class="tag-placeholder-alerta" role="note">
+              <span>ℹ️ Conteúdo personalizável: substitua com o link do seu repositório de API</span>
+            </div>
+          </article>
+
+          <!-- Projeto 2: API REST com Java e Spring Boot -->
+          <article class="card-projeto">
+            <div class="card-frame-visual">
+              <svg class="svg-preview-projeto" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4 6h16v12H4zM2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm7 4l-4 4 4 4m6-8l4 4-4 4" />
+              </svg>
+              <span class="card-frame-rotulo">BACK-END JAVA</span>
+            </div>
+
+            <span class="card-badge-categoria">Back-end &amp; Spring Boot</span>
+            <h3 class="card-titulo-projeto">API REST com Java &amp; Spring Boot</h3>
+
+            <p class="card-descricao-projeto">
+              Construção de serviço back-end básico explorando arquitetura RESTful com o ecossistema Spring Boot.
+              Criação de controllers, mapeamento de rotas e manipulação de requisições POST para recebimento e validação
+              de payloads JSON.
+            </p>
+
+            <ul class="card-tech-tags" aria-label="Tecnologias utilizadas no projeto">
+              <li class="tech-pill">Java</li>
+              <li class="tech-pill">Spring Boot</li>
+              <li class="tech-pill">APIs REST</li>
+              <li class="tech-pill">Postman</li>
+            </ul>
+
+            <div class="card-acoes-projeto">
+              <a href="https://github.com/GustavoCAlmeida" target="_blank" rel="noopener noreferrer"
+                class="btn-card-primary">
+                <span>Ver no GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span class="btn-card-outline" style="opacity: 0.8; cursor: default;" title="Repositório de estudo em desenvolvimento">
+                <span>Código em Desenvolvimento</span>
+              </span>
+            </div>
+
+            <div class="tag-placeholder-alerta" role="note">
+              <span>ℹ️ Conteúdo personalizável: adicione a URL exata do repositório Spring Boot</span>
+            </div>
+          </article>
+
+          <!-- Projeto 3: Lógica e Automação com Python -->
+          <article class="card-projeto">
+            <div class="card-frame-visual">
+              <svg class="svg-preview-projeto" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2zM14 8V3.5L18.5 8H14zM8 12h8m-8 4h8" />
+              </svg>
+              <span class="card-frame-rotulo">SCRIPTS PYTHON</span>
+            </div>
+
+            <span class="card-badge-categoria">Lógica &amp; Automação</span>
+            <h3 class="card-titulo-projeto">Processamento &amp; Lógica com Python</h3>
+
+            <p class="card-descricao-projeto">
+              Conjunto de rotinas e scripts desenvolvidos em Python aplicando conceitos fundamentais de lógica de
+              programação, estruturas de controle, funções modulares e manipulação de arquivos de texto e formatos de
+              dados.
+            </p>
+
+            <ul class="card-tech-tags" aria-label="Tecnologias utilizadas no projeto">
+              <li class="tech-pill">Python 3</li>
+              <li class="tech-pill">Lógica de Programação</li>
+              <li class="tech-pill">Manipulação de Arquivos</li>
+              <li class="tech-pill">Git</li>
+            </ul>
+
+            <div class="card-acoes-projeto">
+              <a href="https://github.com/GustavoCAlmeida" target="_blank" rel="noopener noreferrer"
+                class="btn-card-primary">
+                <span>Ver no GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span class="btn-card-outline" style="opacity: 0.8; cursor: default;">
+                <span>Estudo Prático</span>
+              </span>
+            </div>
+
+            <div class="tag-placeholder-alerta" role="note">
+              <span>ℹ️ Conteúdo personalizável: link para seu repositório de exercícios/scripts Python</span>
+            </div>
+          </article>
+
+          <!-- Projeto 4: Interfaces Web com Tailwind CSS e Acessibilidade -->
+          <article class="card-projeto">
+            <div class="card-frame-visual">
+              <svg class="svg-preview-projeto" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" fill="none" stroke="currentColor"
+                  stroke-width="2" />
+                <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" />
+                <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" />
+              </svg>
+              <span class="card-frame-rotulo">INTERFACE WEB</span>
+            </div>
+
+            <span class="card-badge-categoria">Front-end &amp; Design</span>
+            <h3 class="card-titulo-projeto">Layout Responsivo &amp; Animações Tailwind</h3>
+
+            <p class="card-descricao-projeto">
+              Criação de páginas e componentes com design moderno e fluido utilizando o framework Tailwind CSS.
+              Implementação de microinterações, transições suaves e rigoroso alinhamento com a abordagem Mobile First.
+            </p>
+
+            <ul class="card-tech-tags" aria-label="Tecnologias utilizadas no projeto">
+              <li class="tech-pill">Tailwind CSS</li>
+              <li class="tech-pill">HTML5 Semântico</li>
+              <li class="tech-pill">CSS Animations</li>
+              <li class="tech-pill">Mobile First</li>
+            </ul>
+
+            <div class="card-acoes-projeto">
+              <a href="https://github.com/GustavoCAlmeida" target="_blank" rel="noopener noreferrer"
+                class="btn-card-primary">
+                <span>Ver no GitHub</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span class="btn-card-outline" style="opacity: 0.8; cursor: default;">
+                <span>Template Reutilizável</span>
+              </span>
+            </div>
+
+            <div class="tag-placeholder-alerta" role="note">
+              <span>ℹ️ Conteúdo personalizável: inclua sua página de demonstração desenvolvida</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SEÇÃO HABILIDADES & STACK (COM ABAS ACESSÍVEIS)
+         -------------------------------------------------------------------- -->
+    <section id="stack" class="secao-stack" aria-labelledby="tituloStack">
+      <div class="container-padrao">
+        <header class="cabecalho-secao">
+          <span class="tag-secao">Competências Técnicas</span>
+          <h2 id="tituloStack" class="titulo-secao">MINHA STACK</h2>
+          <p class="subtitulo-secao">
+            Tecnologias com as quais tenho contato prático e acadêmico. Organização transparente entre conhecimentos
+            fundamentais e tecnologias em aprendizado contínuo.
+          </p>
+        </header>
+
+        <!-- Abas de Filtro WAI-ARIA -->
+        <div class="abas-stack-lista" role="tablist" aria-label="Categorias de habilidades">
+          <button id="aba-todas" class="aba-stack-btn" role="tab" aria-selected="true" aria-controls="painel-todas"
+            tabindex="0">
+            Todas as Habilidades
+          </button>
+          <button id="aba-frontend" class="aba-stack-btn" role="tab" aria-selected="false"
+            aria-controls="painel-frontend" tabindex="-1">
+            Front-end
+          </button>
+          <button id="aba-backend" class="aba-stack-btn" role="tab" aria-selected="false"
+            aria-controls="painel-backend" tabindex="-1">
+            Back-end &amp; APIs
+          </button>
+          <button id="aba-ferramentas" class="aba-stack-btn" role="tab" aria-selected="false"
+            aria-controls="painel-ferramentas" tabindex="-1">
+            Ferramentas &amp; SENAC
+          </button>
+        </div>
+
+        <!-- Painel 1: Todas as Habilidades -->
+        <div id="painel-todas" class="painel-stack-conteudo ativo" role="tabpanel" aria-labelledby="aba-todas">
+          <div class="painel-cabecalho">
+            <h3 class="painel-titulo">VISÃO GERAL DAS COMPETÊNCIAS</h3>
+            <p class="painel-descricao">
+              Panorama consolidado das tecnologias utilizadas em projetos de interface, consumo de serviços e formação
+              acadêmica.
+            </p>
+          </div>
+
+          <div class="grid-habilidades-cards">
+            <!-- HTML, CSS e JavaScript -->
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">HTML, CSS &amp; JS</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Uso prático no desenvolvimento de interfaces web responsivas, estruturação semântica e manipulação de
+                eventos no DOM com JavaScript puro (ES6+).
+              </p>
+            </article>
+
+            <!-- Tailwind CSS -->
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Tailwind CSS</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Estilização utilitária de interfaces modernas e criação de animações e transições visuais fluidas.
+              </p>
+            </article>
+
+            <!-- Consumo de APIs REST -->
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Consumo de APIs REST</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Integração do front-end com endpoints de APIs web, realizando requisições HTTP e tratamento dinâmico de
+                dados assíncronos.
+              </p>
+            </article>
+
+            <!-- Java (Spring Boot) -->
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Java (Spring Boot)</span>
+                <span class="badge-nivel basico">Básico</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Conhecimento introdutório/básico, configurando controladores e manipulando requisições POST para APIs
+                REST.
+              </p>
+            </article>
+
+            <!-- Python -->
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Python</span>
+                <span class="badge-nivel basico">Básico</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Fundamentos de sintaxe, estruturas de dados básicas, lógica procedural e scripts utilitários.
+              </p>
+            </article>
+
+            <!-- Postman -->
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Postman</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Criação e execução de coleções de testes de requisições HTTP (GET, POST), análise de payloads e status de
+                resposta.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Painel 2: Front-end -->
+        <div id="painel-frontend" class="painel-stack-conteudo" role="tabpanel" aria-labelledby="aba-frontend" hidden>
+          <div class="painel-cabecalho">
+            <h3 class="painel-titulo">DESENVOLVIMENTO FRONT-END</h3>
+            <p class="painel-descricao">
+              Foco na criação de páginas com acessibilidade, responsividade para todos os tamanhos de tela e código
+              limpo.
+            </p>
+          </div>
+
+          <div class="grid-habilidades-cards">
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">HTML5 Semântico</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Estruturação semântica correta com elementos como header, nav, main, article, section e footer,
+                respeitando hierarquias de acessibilidade.
+              </p>
+            </article>
+
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">CSS3 &amp; Mobile First</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Design responsivo estruturado com Mobile First, flexbox, grid layout, media queries min-width e
+                variáveis CSS nativas.
+              </p>
+            </article>
+
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">JavaScript (ES6+)</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Funções assíncronas (async/await), manipulação e eventos do DOM, métodos de array e integração de APIs.
+              </p>
+            </article>
+
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Tailwind CSS</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Agilidade na estilização de interfaces responsivas, transições suaves e componentes modernos.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Painel 3: Back-end & APIs -->
+        <div id="painel-backend" class="painel-stack-conteudo" role="tabpanel" aria-labelledby="aba-backend" hidden>
+          <div class="painel-cabecalho">
+            <h3 class="painel-titulo">BACK-END &amp; INTEGRAÇÕES</h3>
+            <p class="painel-descricao">
+              Conhecimentos fundamentais em linguagens back-end e protocolos de comunicação web via APIs REST.
+            </p>
+          </div>
+
+          <div class="grid-habilidades-cards">
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Java (Spring Boot)</span>
+                <span class="badge-nivel basico">Básico</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Noções introdutórias do framework Spring Boot, criação de endpoints REST e tratamento de requisições POST
+                para recepção de dados.
+              </p>
+            </article>
+
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Python</span>
+                <span class="badge-nivel basico">Básico</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Lógica de programação, tipos de dados, listas, dicionários e execução de algoritmos essenciais.
+              </p>
+            </article>
+
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Consumo de APIs REST</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Compreensão de verbos HTTP (GET, POST), códigos de status (200, 400, 500) e manipulação de payloads no
+                formato JSON.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Painel 4: Ferramentas & SENAC -->
+        <div id="painel-ferramentas" class="painel-stack-conteudo" role="tabpanel" aria-labelledby="aba-ferramentas"
+          hidden>
+          <div class="painel-cabecalho">
+            <h3 class="painel-titulo">FERRAMENTAS &amp; FORMAÇÃO</h3>
+            <p class="painel-descricao">
+              Softwares de desenvolvimento, controle de versão e tópicos em andamento na grade técnica do SENAC.
+            </p>
+          </div>
+
+          <div class="grid-habilidades-cards">
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Postman</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Validação de rotas de APIs, envio de parâmetros nos cabeçalhos e no corpo das requisições, e inspeção de
+                retornos.
+              </p>
+            </article>
+
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Git &amp; GitHub</span>
+                <span class="badge-nivel familiaridade">Familiaridade</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Controle de versão de código, repositórios remotos, commits organizados e hospedagem de páginas via GitHub
+                Pages.
+              </p>
+            </article>
+
+            <article class="card-habilidade">
+              <div class="habilidade-topo">
+                <span class="habilidade-nome">Banco de Dados (SENAC)</span>
+                <span class="badge-nivel basico">Em Aprendizado</span>
+              </div>
+              <p class="habilidade-detalhe">
+                Introdução a modelos relacionais, comandos de consulta e integração conceitual com o desenvolvimento de
+                software.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SEÇÃO SOBRE MIM
+         -------------------------------------------------------------------- -->
+    <section id="sobre" class="secao-sobre" aria-labelledby="tituloSobre">
+      <div class="container-padrao">
+        <div class="sobre-grid">
+          <div class="sobre-conteudo-texto">
+            <header class="cabecalho-secao">
+              <span class="tag-secao">Trajetória &amp; Perfil</span>
+              <h2 id="tituloSobre" class="titulo-secao">QUEM SOU EU?</h2>
+            </header>
+
+            <p class="sobre-paragrafo">
+              Olá! Meu nome é <strong>Gustavo Cruz de Almeida</strong>. Sou estudante do curso <strong>Técnico em
+                Informática pelo SENAC São Paulo</strong> e tenho paixão por tecnologia, programação e desenvolvimento
+              web.
+            </p>
+
+            <p class="sobre-paragrafo">
+              Estou construindo uma base sólida de conhecimentos, com foco principal na criação de interfaces web
+              responsivas e funcionais utilizando <strong>HTML5, CSS3, JavaScript</strong> e <strong>Tailwind
+                CSS</strong>, além de práticas de integração e consumo de <strong>APIs REST</strong>. No back-end, venho
+              explorando conceitos básicos com <strong>Java (Spring Boot)</strong> e <strong>Python</strong>, testando
+              serviços e requisições com <strong>Postman</strong>.
+            </p>
+
+            <div class="sobre-destaque-box">
+              <p>
+                "Meu objetivo é conquistar minha primeira oportunidade profissional na área de Tecnologia da Informação,
+                contribuindo com dedicação e vontade contínua de aprender e evoluir em equipe."
+              </p>
+            </div>
+
+            <p class="sobre-paragrafo">
+              Prezo por código organizado, atenção à acessibilidade (WCAG) e cumprimento de padrões web da W3C. Busco
+              transformar o aprendizado em projetos reais que agreguem valor a usuários e equipes de desenvolvimento.
+            </p>
+
+            <div style="margin-top: 1.75rem;">
+              <a href="#contato" class="btn-principal">
+                <span>Conversar Comigo</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cartão Perfil / CV Lateral -->
+          <div class="card-perfil-sobre">
+            <div class="perfil-cabecalho">
+              <div class="avatar-container" aria-hidden="true">
+                <span>GA</span>
+              </div>
+              <div class="perfil-info">
+                <h3 class="perfil-info-nome">Gustavo Almeida</h3>
+                <p class="perfil-info-cargo">Estudante Técnico em Informática | SENAC</p>
+              </div>
+            </div>
+
+            <div class="perfil-metas-lista">
+              <div class="meta-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <span>Foco em Front-end, usabilidade e integrações de APIs REST</span>
+              </div>
+              <div class="meta-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <span>Metodologia Mobile-First e acessibilidade web (WCAG 2.2)</span>
+              </div>
+              <div class="meta-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <span>Disponível para estágios e oportunidades Júnior em TI</span>
+              </div>
+            </div>
+
+            <div class="card-cv-download">
+              <div class="cv-chamada-texto">
+                <p>Baixe meu currículo completo em formato PDF:</p>
+              </div>
+              <div>
+                <!-- Link configurável para o arquivo do currículo -->
+                <a href="#contato" class="btn-secundario" id="btnBaixarCurriculo"
+                  aria-label="Solicitar ou baixar o currículo em PDF">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Currículo (PDF)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SEÇÃO FORMAÇÃO ACADÊMICA
+         -------------------------------------------------------------------- -->
+    <section id="formacao" class="secao-formacao" aria-labelledby="tituloFormacao">
+      <div class="container-padrao">
+        <header class="cabecalho-secao">
+          <span class="tag-secao">Educação &amp; Qualificação</span>
+          <h2 id="tituloFormacao" class="titulo-secao">FORMAÇÃO ACADÊMICA</h2>
+          <p class="subtitulo-secao">
+            Cursos de formação técnica e especialização em tecnologia da informação.
+          </p>
+        </header>
+
+        <div class="timeline-formacao">
+          <!-- Card SENAC -->
+          <article class="card-formacao">
+            <div class="formacao-topo">
+              <span class="formacao-status-tag">Em Andamento</span>
+              <h3 class="formacao-curso-titulo">Técnico em Informática</h3>
+              <span class="formacao-instituicao">SENAC São Paulo</span>
+            </div>
+
+            <p class="formacao-descricao">
+              Formação técnica profissionalizante orientada a práticas de mercado, englobando desenvolvimento de
+              sistemas, lógica e algoritmos de programação, desenvolvimento para web, bancos de dados, modelagem de
+              dados, infraestrutura e arquitetura de computadores.
+            </p>
+
+            <h4 class="topicos-aprendizado-titulo">Tópicos e Disciplinas do Curso:</h4>
+            <div class="topicos-lista">
+              <span class="topico-pill">Lógica de Programação</span>
+              <span class="topico-pill">Desenvolvimento Web (Front-end)</span>
+              <span class="topico-pill">Bancos de Dados Relacionais</span>
+              <span class="topico-pill">Estruturas de Dados</span>
+              <span class="topico-pill">Redes &amp; Infraestrutura</span>
+              <span class="topico-pill">Trabalho em Equipe &amp; Projetos</span>
+            </div>
+
+            <div class="tag-placeholder-alerta" style="margin-top: 1.25rem;" role="note">
+              <span>ℹ️ Campo para personalização: adicione ano previsto de conclusão (Ex: 2026/2027) e novas certificações</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SEÇÃO CONTATO
+         -------------------------------------------------------------------- -->
+    <section id="contato" class="secao-contato" aria-labelledby="tituloContato">
+      <div class="contato-wrapper">
+        <h2 id="tituloContato" class="contato-titulo">VAMOS CONSTRUIR ALGO JUNTOS?</h2>
+        <p class="contato-subtitulo">
+          Estou à disposição para conversar sobre oportunidades de estágio, vagas júnior, projetos ou troca de ideias
+          sobre tecnologia. Entre em contato pelos canais abaixo:
+        </p>
+
+        <!-- Grade de Canais Diretos -->
+        <div class="contato-canais-grid">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/gustavo-cruz-de-almeida-a4a92a388" target="_blank"
+            rel="noopener noreferrer" class="canal-contato-card"
+            aria-label="Conectar via LinkedIn de Gustavo Almeida (abre em nova guia)">
+            <div class="canal-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z" />
+              </svg>
+            </div>
+            <div>
+              <span class="canal-info-tipo">Rede Profissional</span>
+              <p class="canal-info-valor">LinkedIn: gustavo-cruz-de-almeida</p>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/GustavoCAlmeida" target="_blank" rel="noopener noreferrer"
+            class="canal-contato-card" aria-label="Visualizar repositórios no GitHub de Gustavo Almeida (abre em nova guia)">
+            <div class="canal-icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.06-.01-1.93-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.35 1.1 2.92.84.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.13-4.55-5.03 0-1.11.38-2.02 1.02-2.73-.1-.26-.44-1.31.1-2.72 0 0 .84-.27 2.75 1.04a9.4 9.4 0 015 0c1.9-1.31 2.75-1.04 2.75-1.04.54 1.41.2 2.46.1 2.72.64.71 1.02 1.62 1.02 2.73 0 3.91-2.34 4.77-4.57 5.02.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" />
+              </svg>
+            </div>
+            <div>
+              <span class="canal-info-tipo">Repositórios</span>
+              <p class="canal-info-valor">GitHub: @GustavoCAlmeida</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Formulário Acessível com Validação Real -->
+        <div class="form-contato-container">
+          <h3 class="form-contato-titulo">ENVIE UMA MENSAGEM RÁPIDA</h3>
+          <p class="form-contato-desc">
+            Preencha os campos para iniciar uma conversa diretamente com Gustavo Almeida.
+          </p>
+
+          <form id="formContato" novalidate>
+            <div class="form-grupo">
+              <label for="campoNome" class="form-label">Seu Nome completo *</label>
+              <input type="text" id="campoNome" class="form-input" placeholder="Ex: Maria Oliveira" required
+                autocomplete="name">
+            </div>
+
+            <div class="form-grupo">
+              <label for="campoEmail" class="form-label">Seu E-mail para contato *</label>
+              <input type="email" id="campoEmail" class="form-input" placeholder="Ex: maria@empresa.com" required
+                autocomplete="email">
+            </div>
+
+            <div class="form-grupo">
+              <label for="campoMensagem" class="form-label">Sua Mensagem *</label>
+              <textarea id="campoMensagem" class="form-textarea"
+                placeholder="Olá Gustavo, gostaria de conversar sobre uma oportunidade..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-principal" style="width: 100%;">
+              <span>Preparar Mensagem de Contato</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <!-- Mensagem de Status Acessível -->
+            <div id="formStatusMsg" class="form-status-msg" role="status" aria-live="polite" tabindex="-1"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       RODAPÉ
+       ====================================================================== -->
+  <footer class="rodape">
+    <div class="container-padrao">
+      <div class="rodape-logo">
+        <span>GA<span style="color: var(--cor-vermelho);">.</span></span>
+      </div>
+
+      <nav class="rodape-links-nav" aria-label="Links rápidos do rodapé">
+        <a href="#inicio" class="rodape-nav-link">Início</a>
+        <a href="#projetos" class="rodape-nav-link">Projetos</a>
+        <a href="#stack" class="rodape-nav-link">Stack</a>
+        <a href="#sobre" class="rodape-nav-link">Sobre</a>
+        <a href="#formacao" class="rodape-nav-link">Formação</a>
+        <a href="#contato" class="rodape-nav-link">Contato</a>
+      </nav>
+
+      <div class="rodape-social-lista" aria-label="Redes sociais no rodapé">
+        <a href="https://github.com/GustavoCAlmeida" target="_blank" rel="noopener noreferrer" class="icone-social"
+          aria-label="GitHub de Gustavo Almeida">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-1.06-.01-1.93-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.35 1.1 2.92.84.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.13-4.55-5.03 0-1.11.38-2.02 1.02-2.73-.1-.26-.44-1.31.1-2.72 0 0 .84-.27 2.75 1.04a9.4 9.4 0 015 0c1.9-1.31 2.75-1.04 2.75-1.04.54 1.41.2 2.46.1 2.72.64.71 1.02 1.62 1.02 2.73 0 3.91-2.34 4.77-4.57 5.02.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.2C22 6.58 17.52 2 12 2z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gustavo-cruz-de-almeida-a4a92a388" target="_blank" rel="noopener noreferrer"
+          class="icone-social" aria-label="LinkedIn de Gustavo Almeida">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="rodape-creditos">
+        <p>&copy; <span id="anoAtual">2026</span> Gustavo Cruz de Almeida. Todos os direitos reservados.</p>
+        <p>Desenvolvido com HTML5 Semântico, CSS3 Mobile-First e JavaScript Vanilla puro.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo Acessível -->
+  <button id="btnVoltarTopo" class="btn-voltar-topo" aria-label="Voltar ao início da página">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 4l-8 8h5v8h6v-8h5z" />
+    </svg>
+  </button>
+</body>
+
+</html>
