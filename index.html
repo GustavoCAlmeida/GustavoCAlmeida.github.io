@@ -968,26 +968,29 @@
           </p>
 
           <form id="formContato" novalidate>
+            <!-- Proteção anti-spam honeypot para Web3Forms (invisível para humanos) -->
+            <input type="checkbox" name="botcheck" class="campo-oculto" style="display: none;" tabindex="-1" autocomplete="off">
+
             <div class="form-grupo">
               <label for="campoNome" class="form-label">Seu Nome completo *</label>
-              <input type="text" id="campoNome" class="form-input" placeholder="Ex: Maria Oliveira" required
+              <input type="text" id="campoNome" name="name" class="form-input" placeholder="Ex: Maria Oliveira" required
                 autocomplete="name">
             </div>
 
             <div class="form-grupo">
               <label for="campoEmail" class="form-label">Seu E-mail para contato *</label>
-              <input type="email" id="campoEmail" class="form-input" placeholder="Ex: maria@empresa.com" required
+              <input type="email" id="campoEmail" name="email" class="form-input" placeholder="Ex: maria@empresa.com" required
                 autocomplete="email">
             </div>
 
             <div class="form-grupo">
               <label for="campoMensagem" class="form-label">Sua Mensagem *</label>
-              <textarea id="campoMensagem" class="form-textarea"
+              <textarea id="campoMensagem" name="message" class="form-textarea"
                 placeholder="Olá Gustavo, gostaria de conversar sobre uma oportunidade..." required></textarea>
             </div>
 
-            <button type="submit" class="btn-principal" style="width: 100%;">
-              <span>Preparar Mensagem de Contato</span>
+            <button type="submit" id="btnEnviarContato" class="btn-principal" style="width: 100%;">
+              <span>Enviar Mensagem</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 aria-hidden="true">
                 <line x1="22" y1="2" x2="11" y2="13"></line>

@@ -1816,3 +1816,5 @@ ol {
     page-break-inside: avoid;
   }
 }
+
+.icone-girando { animation: girarIcone 0.9s linear infinite; display: inline-block; vertical-align: middle; } @keyframes girarIcone { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
