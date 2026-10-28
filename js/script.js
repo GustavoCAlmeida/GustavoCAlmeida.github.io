@@ -299,16 +299,23 @@ function initAnoAtual() {
 
 /**
  * --------------------------------------------------------------------------
- * 8. VALIDAÇÃO ACESSÍVEL DO FORMULÁRIO DE CONTATO
+ * 8. VALIDAÇÃO E ENVIO DO FORMULÁRIO DE CONTATO (WEB3FORMS / EMAIL)
  * --------------------------------------------------------------------------
  */
 function initFormularioContato() {
   const form = document.getElementById('formContato');
   const statusMsg = document.getElementById('formStatusMsg');
+  const btnSubmit = document.getElementById('btnEnviarContato') || form?.querySelector('button[type="submit"]');
 
   if (!form || !statusMsg) return;
 
-  form.addEventListener('submit', (e) => {
+  // =========================================================================
+  // 👉 COLE SUA ACCESS KEY DO WEB3FORMS AQUI:
+  // Obtenha sua chave gratuita em: https://web3forms.com/
+  // =========================================================================
+  const WEB3FORMS_ACCESS_KEY = "c8f20ed5-bb30-4978-bcd1-0bcdf9fd4587";
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const nome = document.getElementById('campoNome');
@@ -317,9 +324,10 @@ function initFormularioContato() {
 
     if (!nome || !email || !mensagem) return;
 
-    // Validação básica de campos
+    // Validação básica de campos obrigatórios
     if (!nome.value.trim() || !email.value.trim() || !mensagem.value.trim()) {
       statusMsg.className = 'form-status-msg erro';
+      statusMsg.style.display = 'block';
       statusMsg.textContent = 'Por favor, preencha todos os campos obrigatórios antes de enviar.';
       statusMsg.focus();
       return;
@@ -329,21 +337,82 @@ function initFormularioContato() {
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!regexEmail.test(email.value.trim())) {
       statusMsg.className = 'form-status-msg erro';
+      statusMsg.style.display = 'block';
       statusMsg.textContent = 'Por favor, informe um endereço de e-mail válido.';
       email.focus();
       return;
     }
 
-    // Feedback claro sem simular envio falso sem backend
-    statusMsg.className = 'form-status-msg sucesso';
-    statusMsg.innerHTML = `
-      <strong>Mensagem pronta para envio!</strong><br>
-      Como este é um portfólio estático, você pode enviar diretamente para meu e-mail através do link:<br>
-      <a href="mailto:gustavo.calmeida4@senacsp.edu.br?subject=Contato%20via%20Portfolio%20-%20${encodeURIComponent(nome.value.trim())}&body=${encodeURIComponent(mensagem.value.trim())}" style="text-decoration: underline; font-weight: bold; color: inherit; display: inline-block; margin-top: 6px;">
-        Clique aqui para abrir no seu aplicativo de e-mail &rarr;
-      </a>
+    // Alerta se a chave ainda não tiver sido configurada
+    if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === "SUA_ACCESS_KEY_AQUI") {
+      statusMsg.className = 'form-status-msg erro';
+      statusMsg.style.display = 'block';
+      statusMsg.innerHTML = `
+        <strong>Chave não configurada!</strong> Cole sua Access Key do Web3Forms no topo da função no arquivo <code>js/script.js</code>.<br>
+        Enquanto isso, você pode enviar diretamente por e-mail:
+        <a href="mailto:gustavo.calmeida4@senacsp.edu.br?subject=Contato%20via%20Portfolio%20-%20${encodeURIComponent(nome.value.trim())}&body=${encodeURIComponent(mensagem.value.trim())}" style="text-decoration: underline; font-weight: bold; color: inherit; display: inline-block; margin-top: 6px;">
+          Clique aqui para abrir no seu cliente de e-mail &rarr;
+        </a>
+      `;
+      statusMsg.focus();
+      return;
+    }
+
+    // Feedback visual: desabilitar botão e mostrar status de carregamento
+    const textoOriginalBotao = btnSubmit.innerHTML;
+    btnSubmit.disabled = true;
+    btnSubmit.style.opacity = '0.7';
+    btnSubmit.style.cursor = 'not-allowed';
+    btnSubmit.innerHTML = `
+      <span>Enviando mensagem...</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icone-girando" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity="0.25"></circle>
+        <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" stroke-linecap="round"></path>
+      </svg>
     `;
 
-    form.reset();
+    statusMsg.className = 'form-status-msg';
+    statusMsg.style.display = 'none';
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          name: nome.value.trim(),
+          email: email.value.trim(),
+          message: mensagem.value.trim(),
+          from_name: 'Portfólio - Gustavo Almeida',
+          subject: `Nova mensagem de contato recebida de ${nome.value.trim()}`
+        })
+      });
+
+      const resultado = await response.json();
+
+      if (response.status === 200 && resultado.success) {
+        statusMsg.className = 'form-status-msg sucesso';
+        statusMsg.style.display = 'block';
+        statusMsg.textContent = 'Mensagem enviada com sucesso! Em breve entrarei em contato com você.';
+        form.reset();
+        statusMsg.focus();
+      } else {
+        throw new Error(resultado.message || 'Erro ao enviar mensagem.');
+      }
+    } catch (erro) {
+      statusMsg.className = 'form-status-msg erro';
+      statusMsg.style.display = 'block';
+      statusMsg.textContent = 'Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde ou me contate via LinkedIn.';
+      statusMsg.focus();
+    } finally {
+      btnSubmit.disabled = false;
+      btnSubmit.style.opacity = '';
+      btnSubmit.style.cursor = '';
+      btnSubmit.innerHTML = textoOriginalBotao;
+    }
   });
 }
+
